@@ -5,13 +5,13 @@ A mini-compiler for the educational PHYLOG programming language, built using FLE
 This project implements a compiler for PHYLOG, a teaching language defined by the professor in the compilation module.  
 The compiler covers the main phases of compilation:
 
-**Lexical analysis** (FLEX)  
-**Syntax analysis** (BISON, LALR grammar)  
-**Semantic analysis** (type checking, symbol table handling)  
-**Symbol table implementation** with hashing  
-**Intermediate code generation** using quadruples  
-**Basic optimization routines**  
-**Error reporting** with line and column numbers  
+- **Lexical analysis** (FLEX)  
+- **Syntax analysis** (BISON, LALR grammar)  
+- **Semantic analysis** (type checking, symbol table handling)  
+- **Symbol table implementation** with hashing  
+- **Intermediate code generation** using quadruples  
+- **Basic optimization routines**  
+- **Error reporting** with line and column numbers  
 
 The repository also includes test files and documentation describing the PHYLOG language specification.
 
