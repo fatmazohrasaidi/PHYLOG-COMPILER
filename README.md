@@ -24,7 +24,7 @@ Ensure FLEX, BISON, and GCC are installed and available in your system PATH.
 
 ## Files
 
-Main source files:  
+### Main source files:  
 - lexical.l — Lexical analyzer specification  
 - syntaxique.y — Bison grammar for syntax and semantic rules  
 - ts.c, ts.h — Symbol table implementation  
@@ -32,9 +32,12 @@ Main source files:
 - quad.h — Quadruple structure for intermediate code  
 - optimisation.h — Optimization routines  
 - GenerationCodeObjet.h — Object code generation  
-Test files:  
-test.txt, test1.txt, test-opti.txt  
-Documentation: Projet Compil 2024_2025. docx.pdf (PHYLOG language description)
+### Test files:  
+- test.txt  
+- test1.txt
+- test-opti.txt  
+### Documentation:  
+Projet Compil 2024_2025. docx.pdf (PHYLOG language description)
 
 ## How to Compile  
 Inside the project directory, run the following commands in order:  
@@ -42,10 +45,10 @@ Inside the project directory, run the following commands in order:
 flex lexical.l  
 - Generate the syntax and semantic analyzer:  
 bison -d syntaxique.y  
--Compile all components with GCC:  
+- Compile all components with GCC:  
 gcc lex.yy.c syntaxique.tab.c ts.c semantique.c -o pgm.exe -lfl -ly  
 This will produce an executable file named pgm.exe.  
-##How to Run  
+## How to Run  
 Provide a PHYLOG source file as input:  
 pgm.exe test-opti.txt  
 
@@ -54,7 +57,7 @@ You may replace test-opti.txt with any of the provided test files or your own pr
 ## Testing
 
 The repository includes several test files demonstrating:  
--Variable declarations  
+- Variable declarations  
 - Constants  
 - Arithmetic and logical expressions  
 - Conditions (IF / ELSE)  
