@@ -1,0 +1,43 @@
+Myprog
+
+DATA
+    CONST: MAR=5;
+    FLOAT: A;
+    INTEGER: X | Y |Z| B| TRIAL;
+    FLOAT : A | V;
+    CHAR: C;
+    STRING: S;
+ 
+    VECTOR : Maissa [3, 5 : STRING] ;
+    §VECTOR : Sissa [Am, Pm : STRING] ;
+    VECTOR : Numbers [2, 10 : INTEGER] ;
+    VECTOR : Values [1, 5 : FLOAT] ;
+    
+
+END
+
+CODE
+    C=5.22;
+    TRIAL = 5+8+A;
+    §X= 7.22+7.5+ 8;
+    §C='v';
+    §Z= MAR;
+    §A= MAR;
+    §X = (-10.5);
+    §V=8.66;
+    A=1;
+    FOR (A: 2: 10)
+        DISPLAY("Boucle externe, Z =$" : Z);
+        V=8.66;
+        B=1;
+	FOR (B: 1: A)
+            DISPLAY("  Boucle interne, B =$" : B);
+            X= 7+ 8;
+        END
+        
+    END
+   C=5.22; 
+    
+END
+
+END

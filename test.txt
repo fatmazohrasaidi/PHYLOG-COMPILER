@@ -1,0 +1,59 @@
+Myprog
+
+DATA
+    INTEGER: X | Y | Z;
+    FLOAT : A | B | V;
+    CHAR: C;
+    STRING: S;
+    CONST: PI = 3.14;
+
+END
+
+CODE
+    X = 10;
+    Y = 20;
+    A = (X + Y) / 2.5;
+    C = 'G';
+    B = 0;
+    S = "Hello World";
+    V =  (-63.88);
+    § c'est un commentaire
+
+   
+
+    IF (X.GE.Y):
+        DISPLAY("X est plus grand ou égal à Y" : Kk);
+        
+        IF (X.EQ.Y):
+            DISPLAY("X et Y sont égaux" : Check);
+        ELSE:
+            DISPLAY("X est strictement supérieur à Y" : Lm);
+        END
+    ELSE:
+        DISPLAY("X est plus petit que Y" : Lm);
+    END
+
+    § Boucles imbriquées
+    FOR (Z: 1: 3)
+        DISPLAY("Boucle externe, Z = " : Z);
+        
+        FOR (B: 1: 3)
+            DISPLAY("  Boucle interne, B = " : B);
+        END
+    END
+
+    DISPLAY("Valeur de X : $" : X);
+    DISPLAY("Valeur de A : %" : A);
+    DISPLAY("Valeur de C : #" : C);
+    DISPLAY("Valeur de S : #" : S);
+    DISPLAY("Valeur de V : ~" : V);
+    
+    DISPLAY("Valeur de Numbers[1] : @" : Numbers[1]);
+    DISPLAY("Valeur de Numbers[2] : @" : Numbers[2]);
+    § Lecture des valeurs
+    READ ("Valeur de X : $" : @Idf );
+    READ ("Valeur de C : &": @Idf );
+    
+END
+
+END

@@ -1,0 +1,38 @@
+3Myprog
+
+DATA
+    CONST: MAR=5;
+    INTEGER: X | Y |Z| B| TRIAL|I|MULT;
+    VECTOR : Values [1, 5 : FLOAT] ;
+END
+
+CODE
+    §1-propagation de copie
+    Y=1;
+    X=Y;
+    Z= 2*Y;§this will deleted after l'optimisation
+
+    §2-propagation des expressions
+     
+    TRIAL=7*Z;
+    B=MAR*5;
+    §X=Z+1;
+
+
+
+    FOR (Y: 2: 10)
+        DISPLAY("Boucle externe, Z =$" : Z);
+        B=1;
+	FOR (B: 1: 20)
+            DISPLAY("  Boucle interne, B =$" : B);
+            X= 7+ 8;
+        END
+     I=B+8;   
+    END
+    
+MULT=MULT*5;
+Y=89;
+END
+
+
+END
