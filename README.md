@@ -79,7 +79,7 @@ A detailed PDF explaining the complete PHYLOG language specification is included
 
 This document serves as the reference for all language features supported by the compiler.
 
-##Notes
+## Notes
 
 PHYLOG is an educational language designed specifically for this university project.
 The goal of the project is to practice the construction of a compiler using FLEX, BISON, and standard compilation techniques.
