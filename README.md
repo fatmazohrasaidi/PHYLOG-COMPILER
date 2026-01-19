@@ -50,7 +50,7 @@ gcc lex.yy.c syntaxique.tab.c ts.c semantique.c -o pgm.exe -lfl -ly
 This will produce an executable file named pgm.exe.  
 ## How to Run  
 Provide a PHYLOG source file as input:  
-pgm.exe test-opti.txt  
+- pgm.exe test-opti.txt  
 
 You may replace test-opti.txt with any of the provided test files or your own program written in the PHYLOG language.
 
